@@ -70,6 +70,7 @@ const cart = {
     template: `
     <div>
         <button class="header__icon" type="button" @click="cartShown = !cartShown"><i class="_icon-card _icon-card--size"></i></button>
+        <div class="sum">2</div>
         <div class="cart-block" v-show="cartShown">
             <cart-item v-for="product of cartItems"
             :key="product.id_product"
